@@ -7,7 +7,7 @@ import { fetchGiphy } from '../../store/selector';
 const GetGiphy = () => {
 
     // 🕵 Looks like a perfect spot to get giphys that are fetched from the API
-
+    const giphyResult = useRecoilValue(fetchGiphy);
 
     return (
         <div className='GiphyWrapper' >
